@@ -20,7 +20,7 @@ public class BasePage {
         driver.get(url);
     }
     /*
-    * Wait for visibilty element in DOM model
+    * Wait for visibilty element in DOM modeld
     * */
     public WebElement waitElementIsVisible(WebElement element){
         new WebDriverWait(driver, EXPLICIT_WAIT).until(ExpectedConditions.visibilityOf(element));

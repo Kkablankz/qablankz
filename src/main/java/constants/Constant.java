@@ -6,6 +6,7 @@ public class Constant {
         public static final int EXPLICIT_WAIT = 10;
     }
     public static class Urls{
-        public static final String MOBILE_PAYMENT_URL = "https://next.privat24.ua/mobile";
+        public static final String MOBILE_PAYMENT_URL = "https://next.privat24.ua/mobile?lang=en";
+        public static final String CAR_LEASING_URL = "https://next.privat24.ua/auto-credit/order?lang=en";
     }
 }

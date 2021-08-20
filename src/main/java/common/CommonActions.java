@@ -14,7 +14,7 @@ public class CommonActions {
     public static WebDriver createDriver(){
         WebDriver driver = null;
         switch (BROWSER_AND_PLATFORM){
-            case "chrome win" :
+            case "CHROME" :
                 System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
                 driver = new ChromeDriver();
                 break;

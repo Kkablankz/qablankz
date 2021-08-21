@@ -1,0 +1,8 @@
+pages\telecommunications\MobilePhone.class
+constants\Constant$Urls.class
+constants\Constant.class
+pages\base\BasePage.class
+common\CommonActions.class
+constants\Constant$TimeoutVeriables.class
+common\Config.class
+pages\loan\CarLoansPage.class

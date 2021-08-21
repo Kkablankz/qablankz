@@ -1,0 +1,1 @@
+{"uuid":"3cc438b4-b9e3-4aed-af78-5b069c658e6d","name":"MobilePhonePositiveTest","children":["5976dedc-97dd-47b9-987c-e922573d76c4"],"befores":[],"afters":[{"name":"close","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1629457348205,"stop":1629457348290}],"links":[],"start":1629457340373,"stop":1629457348290}

@@ -1,0 +1,1 @@
+{"uuid":"1576ff8f-3b12-4abb-bcf7-e72f9da366b0","name":"selectAggrementTablePublicSession()","children":["b2beefe3-e872-4d4a-a98f-347e372098ae"],"befores":[],"afters":[{"name":"clearCookiesLocalStorage","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1629457339960,"stop":1629457340029}],"links":[],"start":1629457333350,"stop":1629457340197}

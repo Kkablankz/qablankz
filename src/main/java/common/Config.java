@@ -10,10 +10,10 @@ public class Config {
     /*
     * Clean browser cookies after each iteration
     * */
-    public static final boolean CLEAR_COOKIES = true;
+    public static final boolean CLEAR_COOKIES = false;
     /*
     *to keep the browser open after all scenario
     * */
-    public static final boolean HOLD_BROWSER_OPEN = false;
+    public static final boolean HOLD_BROWSER_OPEN = true;
 
 }

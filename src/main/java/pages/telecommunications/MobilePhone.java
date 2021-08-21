@@ -1,7 +1,9 @@
 package pages.telecommunications;
 
+import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import pages.base.BasePage;
 
 public class MobilePhone extends BasePage {
@@ -15,7 +17,7 @@ public class MobilePhone extends BasePage {
     private final By inputCardExpDate = By.xpath("//*[@id=\"app\"]/div[2]/section/div/div[1]/div[2]/div[1]/div/form/div[4]/div/div[2]/div/div[2]/div[1]/div[1]/div/div[2]/input");
     private final By inputCardCvv = By.xpath("//*[@id=\"app\"]/div[2]/section/div/div[1]/div[2]/div[1]/div/form/div[4]/div/div[2]/div/div[2]/div[1]/div[2]/div[1]/div/div[2]/input");
     private final By buttonSubmitToTheCard = By.xpath("//*[@id=\"app\"]/div[2]/section/div/div[1]/div[2]/div[1]/div/form/div[6]/div/button/div");
-
+    private final By inputName = By.xpath("//*[@id=\"app\"]/div[2]/section/div/div[1]/div[2]/div[1]/div/form/div[4]/div/div[2]/div/div[4]/div/div[1]/div[1]/div/div[2]/input");
     /*
     *   Choose a card from the wallet
     * */
@@ -64,6 +66,15 @@ public class MobilePhone extends BasePage {
     * */
     public MobilePhone SubmitToTheCard(){
         driver.findElement(buttonSubmitToTheCard).click();
+        return this;
+    }
+    /*
+     * Enter Name after Submitted
+     * */
+    public MobilePhone checkNameVisibility(String text){
+      WebElement details = driver.findElement(inputName);
+      waitElementIsVisible(details);
+      Assertions.assertEquals(text, details.getText());
         return this;
     }
     }

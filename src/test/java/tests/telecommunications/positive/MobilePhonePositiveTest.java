@@ -24,6 +24,7 @@ MobilePhonePositiveTest extends BaseTest {
                 .enterCardFrom(MOBILE_PAYMENT_CARD)
                 .enterCardExpDate(MOBILE_PAYMENT_CARD_EXPDATE)
                 .enterCardCvv(MOBILE_PAYMENT_CARD_CVV)
-                .SubmitToTheCard();
+                .SubmitToTheCard()
+                .checkNameVisibility("TARAS");
     }
 }

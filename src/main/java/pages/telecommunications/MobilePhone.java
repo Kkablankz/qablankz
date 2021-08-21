@@ -69,7 +69,7 @@ public class MobilePhone extends BasePage {
         return this;
     }
     /*
-     * Enter Name after Submitted
+     * Check visibility Name after Submitted
      * */
     public MobilePhone checkNameVisibility(String text){
       WebElement details = driver.findElement(inputName);

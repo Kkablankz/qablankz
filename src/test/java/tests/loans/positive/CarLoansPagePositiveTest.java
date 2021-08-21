@@ -12,4 +12,5 @@ public class CarLoansPagePositiveTest extends BaseTest {
         carLoansPage.selectAggrementsTab();
         basePage.isAuthWidgetPresent();
     }
+
 }

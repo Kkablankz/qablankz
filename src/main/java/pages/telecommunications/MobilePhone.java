@@ -11,13 +11,13 @@ public class MobilePhone extends BasePage {
         super(driver);
     }
     private final By buttonWallet = By.xpath("//div[contains(text(), 'My wallet')]");
-    private final By inputPhoneNumber = By.xpath("//*[@id=\"app\"]/div[2]/section/div/div[1]/div[2]/div[1]/div/form/div[1]/div/div/div[2]/div[3]/div[1]/input");
-    private final By inputAmount = By.xpath("//*[@id=\"app\"]/div[2]/section/div/div[1]/div[2]/div[1]/div/form/div[2]/div/div[1]/div[2]/input");
-    private final By inputCardFrom = By.xpath("//*[@id=\"app\"]/div[2]/section/div/div[1]/div[2]/div[1]/div/form/div[4]/div/div[2]/div/div[1]/div[1]/div[1]/div[2]/input");
-    private final By inputCardExpDate = By.xpath("//*[@id=\"app\"]/div[2]/section/div/div[1]/div[2]/div[1]/div/form/div[4]/div/div[2]/div/div[2]/div[1]/div[1]/div/div[2]/input");
-    private final By inputCardCvv = By.xpath("//*[@id=\"app\"]/div[2]/section/div/div[1]/div[2]/div[1]/div/form/div[4]/div/div[2]/div/div[2]/div[1]/div[2]/div[1]/div/div[2]/input");
-    private final By buttonSubmitToTheCard = By.xpath("//*[@id=\"app\"]/div[2]/section/div/div[1]/div[2]/div[1]/div/form/div[6]/div/button/div");
-    private final By inputName = By.xpath("//*[@id=\"app\"]/div[2]/section/div/div[1]/div[2]/div[1]/div/form/div[4]/div/div[2]/div/div[4]/div/div[1]/div[1]/div/div[2]/input");
+    private final By inputPhoneNumber = By.xpath("//input[@data-qa-node='phone-number']");
+    private final By inputAmount = By.xpath("//input[@data-qa-node='amount']");
+    private final By inputCardFrom = By.xpath("//input[@data-qa-node='numberdebitSource']");
+    private final By inputCardExpDate = By.xpath("//input[@data-qa-node='expiredebitSource']");
+    private final By inputCardCvv = By.xpath("//input[@data-qa-node='cvvdebitSource']");
+    private final By buttonSubmitToTheCard = By.xpath("//button[@data-qa-node='submit']");
+    // private final By inputName = By.xpath("//input[@data-qa-node='firstNamedebitSource']");
     /*
     *   Choose a card from the wallet
     * */
@@ -78,4 +78,6 @@ public class MobilePhone extends BasePage {
         return this;
     }
     }
+
+
 

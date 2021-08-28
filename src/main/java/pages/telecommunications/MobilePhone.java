@@ -17,7 +17,8 @@ public class MobilePhone extends BasePage {
     private final By inputCardExpDate = By.xpath("//input[@data-qa-node='expiredebitSource']");
     private final By inputCardCvv = By.xpath("//input[@data-qa-node='cvvdebitSource']");
     private final By buttonSubmitToTheCard = By.xpath("//button[@data-qa-node='submit']");
-    // private final By inputName = By.xpath("//input[@data-qa-node='firstNamedebitSource']");
+    private final By checkFirstName = By.xpath("//label[contains(text(), 'First name')]");
+    private final By inputName = By.xpath("//input[@placeholder='TARAS']");
     /*
     *   Choose a card from the wallet
     * */
@@ -72,7 +73,7 @@ public class MobilePhone extends BasePage {
      * Check visibility Name after Submitted
      * */
     public MobilePhone checkNameVisibility(String text){
-      WebElement details = driver.findElement(inputName);
+      WebElement details = driver.findElement(checkFirstName);
       waitElementIsVisible(details);
       Assertions.assertEquals(text, details.getText());
         return this;

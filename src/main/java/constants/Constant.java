@@ -11,7 +11,7 @@ public class Constant {
     }
     public static class MobilePhoneTestData{
         public static final String MOBILE_PAYMENT_PHONE_NUMBER = "686979712";
-        public static final String MOBILE_PAYMENT_AMOUNT = "A";
+        public static final String MOBILE_PAYMENT_AMOUNT = "50";
         public static final String MOBILE_PAYMENT_CARD = "4506909324274797";
         public static final String MOBILE_PAYMENT_CARD_EXPDATE = "0622";
         public static final String MOBILE_PAYMENT_CARD_CVV = "327";
